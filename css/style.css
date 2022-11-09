@@ -1,0 +1,229 @@
+@media(min-width:1100px){
+    body{
+        margin-left: -421px;
+    }
+    #navbar ul li a{
+        color: white;
+        display: block;
+        padding: 3px 73px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 53px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* transition: all ease-in-out 0.5s; */
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 auto;
+    background: #040b14;
+    overflow-y: auto;
+    height: 63px;
+}
+#footer{
+    width: 100% !important;
+    position:absolute!important;
+    bottom:-2019px !important;
+}
+.nav-menu {
+    padding: 16px 0 0 0 !important;
+
+}
+.container1{
+    text-align: center;
+}
+.back-to-top {
+    bottom: 90px !important;
+};
+
+.logo{
+    size: 33px;
+}
+.logo img{
+    top: 6px;
+    size: 33px;
+    height: 52px;
+    border-radius: 200px;
+    position: absolute;
+}
+
+.cbtn{
+    font-size: 2rem;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+/* formh */
+
+.contact .php-demail-form {
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .contact .php-demail-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+  .contact .php-demail-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  
+  /* .contact .php-demail-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  } */
+  
+  /* .contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+  } */
+  
+  .contact .php-demail-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  /* .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+   */
+  .contact .php-demail-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .php-demail-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact .php-demail-form label {
+    padding-bottom: 8px;
+  }
+  
+  .contact .php-demail-form input,
+  .contact .php-demail-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  .contact .php-demail-form input {
+    height: 44px;
+  }
+  
+  .contact .php-demail-form textarea {
+    padding: 10px 15px;
+  }
+  
+  .contact .php-demail-form button[type=submit] {
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .contact .php-demail-form button[type=submit]:hover {
+    background: #37b3ed;
+  }
+
+  .p-image img{
+    /* box-shadow: 2px 2px 15px black; */
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  }
