@@ -4,30 +4,26 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((e) => {
       if (e.isIntersecting) {
-        // Animate the section itself
         e.target.classList.add("visible");
         
-        // --- Stagger animation for items inside ---
         const itemsToStagger = e.target.querySelectorAll('.stagger-item');
         if (itemsToStagger.length > 0) {
           itemsToStagger.forEach((item, index) => {
             setTimeout(() => {
               item.classList.add('visible');
-            }, index * 100); // 100ms delay between items
+            }, index * 100);
           });
         }
         
-        // Stop observing this element after it has been revealed
         observer.unobserve(e.target);
       }
     });
   },
-  { threshold: 0.1 } // Start animation when 10% of the section is visible
+  { threshold: 0.1 }
 );
 
 reveals.forEach((r) => observer.observe(r));
 
-// Smooth scroll for nav links
 document.querySelectorAll('.navbar a[href^="#"]').forEach((a) => {
   a.addEventListener("click", (ev) => {
     ev.preventDefault();
